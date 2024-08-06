@@ -375,7 +375,7 @@ a {
   opacity: 1;
   transform: scaleX(1) translateY(0);
 } */
-.apple {
+/* .apple {
   width: 320px;
   border: 1px solid black;
 }
@@ -406,4 +406,58 @@ a {
 }
 .apple-photo:hover .overlay {
   transform: translate(0);
+} */
+body {
+  min-height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container {
+  width: 600px;
+  height: 300vh;
+  background-color: skyblue;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.block {
+  border-right: 2px solid red;
+  width: 200px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: seagreen;
+  /* animation-name: rotating;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation: rotating 500ms linear 0s infinite alternate both;
+  animation-play-state: paused; */
+}
+.block:nth-child(even) {
+  align-self: flex-end;
+}
+.container:hover .block {
+  animation-play-state: running;
+}
+@keyframes rotating {
+  0% {
+    transform: rotate(-90deg);
+    background-color: red;
+  }
+  100% {
+    transform: rotate(90deg);
+    background-color: blue;
+  }
+}
+.title {
+  font-size: 2em;
+  text-align: center;
+  color: brown;
 }
