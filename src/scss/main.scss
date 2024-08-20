@@ -1,1 +1,75 @@
 @import "./reset";
+
+$gap: 50px;
+$bg-color-primary: skyblue;
+// kebab-case те як пишуться змінні
+// camelCase
+// snake_case
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+  background-color: $bg-color-primary;
+}
+body {
+  $color-accent: tomato;
+  background-color: $color-accent;
+}
+.nav__link {
+  color: tomato;
+}
+.nav__link--active {
+  color: cadetblue;
+}
+
+.alert {
+  font-size: 25px;
+  padding: 28px 35px;
+  background-color: #e0c8c8;
+  border: 2px solid black;
+}
+.alert--succes {
+  color: #fff;
+  background-color: green;
+}
+.alert--warning {
+  color: black;
+  background-color: yellow;
+}
+.alert--error {
+  color: #fff;
+  background-color: red;
+}
+// --------------------------------------------
+.header {
+  padding: 20px 0;
+  background-color: azure;
+
+  .logo {
+    background-color: aqua;
+  }
+  a {
+    color: coral;
+    &:hover {
+      color: green;
+    }
+  }
+}
+.nav__link {
+  color: tomato;
+  &:hover {
+    color: chartreuse;
+  }
+  &--active {
+    color: blue;
+  }
+}
+.nav {
+  &__item {
+    padding: 10px;
+  }
+  &__link {
+    text-decoration: underline;
+  }
+}
