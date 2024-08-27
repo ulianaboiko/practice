@@ -26,74 +26,13 @@ button {
   border: none;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  background-color: skyblue;
+.button {
+  padding: 10px 20px;
+  font-size: 22px;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 10px;
 }
-
-body {
-  background-color: tomato;
-}
-
-.nav__link {
-  color: tomato;
-}
-
-.nav__link--active {
-  color: cadetblue;
-}
-
-.alert {
-  font-size: 25px;
-  padding: 28px 35px;
-  background-color: #e0c8c8;
-  border: 2px solid black;
-}
-
-.alert--succes {
-  color: #fff;
-  background-color: green;
-}
-
-.alert--warning {
-  color: black;
-  background-color: yellow;
-}
-
-.alert--error {
-  color: #fff;
-  background-color: red;
-}
-
-.header {
-  padding: 20px 0;
-  background-color: azure;
-}
-.header .logo {
-  background-color: aqua;
-}
-.header a {
-  color: coral;
-}
-.header a:hover {
-  color: green;
-}
-
-.nav__link {
-  color: tomato;
-}
-.nav__link:hover {
-  color: chartreuse;
-}
-.nav__link--active {
-  color: blue;
-}
-
-.nav__item {
-  padding: 10px;
-}
-.nav__link {
-  text-decoration: underline;
+.button:hover {
+  background-color: #ff3814;
 }

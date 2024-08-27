@@ -1,75 +1,140 @@
 @import "./reset";
-
+@import "./utils/placeholders";
+@import "./utils/mixins";
 $gap: 50px;
 $bg-color-primary: skyblue;
 // kebab-case те як пишуться змінні
 // camelCase
 // snake_case
 
-.menu {
-  display: flex;
-  align-items: center;
-  gap: $gap;
-  background-color: $bg-color-primary;
-}
-body {
-  $color-accent: tomato;
-  background-color: $color-accent;
-}
-.nav__link {
-  color: tomato;
-}
-.nav__link--active {
-  color: cadetblue;
-}
+// .menu {
+//   display: flex;
+//   align-items: center;
+//   gap: $gap;
+//   background-color: $bg-color-primary;
+// }
+// body {
+//   $color-accent: tomato;
+//   background-color: $color-accent;
+// }
+// .nav__link {
+//   color: tomato;
+// }
+// .nav__link--active {
+//   color: cadetblue;
+// }
 
-.alert {
-  font-size: 25px;
-  padding: 28px 35px;
-  background-color: #e0c8c8;
-  border: 2px solid black;
-}
-.alert--succes {
-  color: #fff;
-  background-color: green;
-}
-.alert--warning {
-  color: black;
-  background-color: yellow;
-}
-.alert--error {
-  color: #fff;
-  background-color: red;
-}
+// .alert {
+//   font-size: 25px;
+//   padding: 28px 35px;
+//   background-color: #e0c8c8;
+//   border: 2px solid black;
+// }
+// .alert--succes {
+//   color: #fff;
+//   background-color: green;
+// }
+// .alert--warning {
+//   color: black;
+//   background-color: yellow;
+// }
+// .alert--error {
+//   color: #fff;
+//   background-color: red;
+// }
 // --------------------------------------------
-.header {
-  padding: 20px 0;
-  background-color: azure;
+// .header {
+//   padding: 20px 0;
+//   background-color: azure;
 
-  .logo {
-    background-color: aqua;
-  }
-  a {
-    color: coral;
-    &:hover {
-      color: green;
-    }
-  }
-}
-.nav__link {
-  color: tomato;
+//   .logo {
+//     background-color: aqua;
+//   }
+//   a {
+//     color: coral;
+//     &:hover {
+//       color: green;
+//     }
+//   }
+// }
+// .nav__link {
+//   color: tomato;
+//   &:hover {
+//     color: chartreuse;
+//   }
+//   &--active {
+//     color: blue;
+//   }
+// }
+// .nav {
+//   &__item {
+//     padding: 10px;
+//   }
+//   &__link {
+//     text-decoration: underline;
+//   }
+// }
+
+// .button-warning {
+//   @extend %button;
+//   background-color: aqua;
+// }
+// .button-error {
+//   @extend %button;
+//   background-color: brown;
+// }
+// .button-succes {
+//   @extend %button;
+//   background-color: darkgoldenrod;
+// }
+// .list li {
+//   width: 50px;
+//   height: 20px;
+//   background-color: bisque;
+// }
+// .list {
+//   @include flex-grid(50px, 20px);
+//   flex-wrap: wrap;
+// }
+
+// .button {
+//   padding: 10px 20px;
+//   font-size: 22px;
+//   color: #333;
+//   border: 2px solid #333;
+//   border-radius: 10px;
+// }
+// $colors: tomato, skyblue, teal, red, gold;
+
+// @each $color in $colors {
+//   .button--#{$color} {
+//     background-color: $color;
+//   }
+// }
+
+// @each $photo in cat, bird {
+//   .button--#{$photo} {
+//     background-image: url(../img/#{$photo}.webp);
+//   }
+// }
+
+// $size: 500px;
+
+// .block {
+//   width: calc($size + 50%);
+// }
+// .box {
+//   width: 946px / 3 + 50px;
+// }
+$bg-btn-color: tomato;
+.button {
+  padding: 10px 20px;
+  font-size: 22px;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 10px;
   &:hover {
-    color: chartreuse;
-  }
-  &--active {
-    color: blue;
+    background-color: darken($bg-btn-color, 10%);
   }
 }
-.nav {
-  &__item {
-    padding: 10px;
-  }
-  &__link {
-    text-decoration: underline;
-  }
-}
+$colors: tomato, skyblue, teal, red, gold;
