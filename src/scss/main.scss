@@ -1,8 +1,8 @@
 @import "./reset";
 @import "./utils/placeholders";
 @import "./utils/mixins";
-$gap: 50px;
-$bg-color-primary: skyblue;
+// $gap: 50px;
+// $bg-color-primary: skyblue;
 // kebab-case те як пишуться змінні
 // camelCase
 // snake_case
@@ -126,15 +126,49 @@ $bg-color-primary: skyblue;
 // .box {
 //   width: 946px / 3 + 50px;
 // }
-$bg-btn-color: tomato;
-.button {
-  padding: 10px 20px;
-  font-size: 22px;
+// $bg-btn-color: tomato;
+// .button {
+//   padding: 10px 20px;
+//   font-size: 22px;
+//   color: #333;
+//   border: 2px solid #333;
+//   border-radius: 10px;
+//   &:hover {
+//     background-color: darken($bg-btn-color, 10%);
+//   }
+// }
+// $colors: tomato, skyblue, teal, red, gold;
+body {
+  font-size: 16px;
+}
+.container {
+  min-width: 320px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.list {
+  padding: 20px 0;
+  column-gap: 50px;
+  row-gap: 100px;
+  background-color: rgb(123, 123, 216);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.link {
   color: #333;
-  border: 2px solid #333;
-  border-radius: 10px;
-  &:hover {
-    background-color: darken($bg-btn-color, 10%);
+  font-size: 2.5em;
+}
+@media (max-width: 468px), (min-width: 1200px) {
+  .list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    padding: 50px 0;
+  }
+  .link {
+    font-size: 3em;
   }
 }
-$colors: tomato, skyblue, teal, red, gold;
