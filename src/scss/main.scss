@@ -223,3 +223,33 @@
 //     display: none;
 //   }
 // }
+// --------------------------------ретинизовані фото
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+.photo {
+  max-width: 370px;
+  height: 294px;
+  background-image: url(../img/tablet.jpg);
+  background-size: cover;
+  //   @media (-webkit-min-device-pixel-ratio: 2),
+  //     (min-resolution: 2dppx),
+  //     (min-resolution: 192dpi) {
+  //     background-image: url(../img/tablet@2x.jpg);
+  //   }
+}
+// @media (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 2dppx),
+//   (min-resolution: 192dpi) {
+//   .photo {
+//     background-image: url(../img/tablet@2x.jpg);
+//   }
+// }
+@media (min-width: 768px) {
+  .photo {
+    background-image: url(../img/tablet.jpg);
+  }
+}
